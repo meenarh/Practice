@@ -30,7 +30,8 @@ li{
 
 a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 a:hover{
@@ -227,4 +228,68 @@ h6{
 footer{
     margin-top: 30px;
     text-align: center;
+}
+
+
+@media (max-width: 600px){
+    *{
+        margin-left: 5px;
+        margin-right: 1px;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    nav > ul{
+        margin-left: 10%;
+    } 
+
+    li{
+        margin: 10px;
+    }
+    
+    .about{
+         flex-direction: column;
+         margin-bottom: 30px;
+    }  
+
+    .image img{
+        width: 0;
+        height: 0;
+    }
+
+    .p{
+        margin-left: 10px;
+        text-align: center;
+    } 
+
+    .education{
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .edu-info{
+        margin-left: 10px;
+    }
+
+    .span span{
+        text-align: justify;
+    }
+
+    .experience{
+        flex-direction: column;
+    }
+
+    .exp img{
+        margin-top: 5px;
+    }
+
+    .exp-info{
+        margin-left: 10px;
+    }
+
+    .spans span{
+        text-align: justify;
+    }
 }
