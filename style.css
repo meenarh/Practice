@@ -1,0 +1,230 @@
+*{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin-left: 25px;
+}
+
+.logo{
+    margin-left: 50px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 35%;
+}
+
+li{
+    list-style: none;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about .name{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 60px;
+    padding-top: 60px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 1.2em;
+}
+
+.span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.span span{
+    margin-top: 13px;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.spans{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spans span{
+    margin-top: 13px;
+    margin-left: 60px;
+    text-align: justify;
+}
+
+.span h4{
+    font-weight: 400;
+    margin-left: 0;
+}
+
+.spans h4{
+    margin-left: 0;
+}
+
+.about .image{
+    margin-left: 60px;
+    justify-content: center;
+}
+
+.image img{
+    width: 600px;
+    height: 600px;
+    margin-left: 100px;
+}
+
+.p p{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+
+.edu img{
+    width: 400px;
+    height: 300px;
+}
+
+.exp img{
+    width: 400px;
+    height: 300px;
+}
+
+.education{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.edu-info{
+    margin-left: 150px;
+}
+
+.experience{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.exp-info{
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+
+.social-links{
+    margin-right: 13%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.social-links p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.soc-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h6{
+    font-size: 22px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+form{
+    padding: 20px;
+    margin-right: 35px;
+}
+
+label{
+    font-size: 20px;
+}
+
+input,textarea,select{
+    width: 350px;
+    height: 40px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+button{
+    margin-top: 10px;
+    background: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+h6{
+    margin-bottom: 0;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
