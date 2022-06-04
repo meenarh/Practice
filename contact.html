@@ -49,18 +49,18 @@
         </div>
     
         <div class="form">
-            <form action="">
-                <label for="">Name:</label><br> 
-                <input type="text"><br>
+            <form action="" id="contact" onsubmit="return postToGoogle();">
+                <label for="name">Name:</label><br> 
+                <input type="text" name="entry.23883185" data-name="Name" id="Name"><br>
     
                 <label for="">Email:</label><br> 
-                <input type="email"><br>
+                <input type="email" name="entry.1124131538" data-name="Email" id="Email"><br>
                 
                 <label for="">Message:</label><br> 
-                <textarea></textarea><br>
+                <textarea name="entry.515161812" data-name="Message" id="Message"></textarea><br>
                 
                 <label for="">Select Priority:</label><br> 
-                <select name="priority" id="priority">
+                <select id="priority" name="entry.974294413" data-name="Message">
                     <option value="urgent">Urgent</option>
                     <option value="vip">Very Important</option>
                     <option value="ip">Important</option>
@@ -76,5 +76,42 @@
     <footer>Replicated from <a href="https://twitter.com/taladeogo_?s=21&t=NHet0q_3PbglQDKls0felA">@Taladeogo's </a> AltSchool Africa assignment</footer>
       
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    function postToGoogle() {
+      var field1 = $("#Name").val();
+      var field2 = $("#Email").val();
+      var field3 = $("#Message").val();
+      var field4 = $("#Priority").val();
+
+      $.ajax({
+        url: "{https://docs.google.com/forms/u/0/d/e/1FAIpQLSdR9fS2oaM3-K5s3bOAsJ_3NiwdvrjzSe4fO_aksDbgpQ2SyQ/formResponse}",
+          
+        //add your google form generated numbers below which are also the 'names' of your inputs     
+        data: {
+          "entry.23883185": field1,
+          "entry.1124131538": field2,
+          "entry.515161812": field3,
+          "entry.974294413": field4
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
+    }
+    </script>
+
 </body>
 </html>
+
+
+
+<!-- 
+-->
