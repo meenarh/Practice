@@ -95,6 +95,7 @@ h5 span{
     font-weight: 500;
     font-size: 30px;
     line-height: 52px;
+    margin: 30px;
 }
 
 .grid-container{
@@ -139,7 +140,8 @@ h5 span{
     width: 100px;
     height: 30px;
     margin-top: 15px;
-    margin-left: 35%;
+    margin-left: 48%;
+    margin-bottom: 30px;
     padding-top: 10px;
     /* border-radius: 7px; */
     border-top-left-radius: 18px;
@@ -159,6 +161,7 @@ h5 span{
     font-weight: 500;
     font-size: 30px;
     line-height: 52px;
+    margin-top: 30px;
 }
 
 .portraits, .weddings, .nature{
@@ -210,8 +213,9 @@ h5 span{
     width: 100px;
     height: 30px;
     margin-top: 15px;
-    margin-left: 45%;
+    margin-left: 48%;
     padding-top: 10px;
+    margin-bottom: 30px;
     /* border-radius: 7px; */
     border-top-left-radius: 18px;
     border-top-right-radius: 8px;
@@ -220,7 +224,6 @@ h5 span{
 }
 
 footer{
-    margin: 10px;
     background: #1F1F1F;
     display: flex;
     flex-direction: column;
